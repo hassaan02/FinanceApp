@@ -15,14 +15,14 @@ class _OverLapConatinerState extends State<OverLapConatiner> {
       height: 170,
       width: 320,
       decoration: BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-            color: whiteColor,
-            offset: Offset(2 , 2),
-            blurRadius: 10,
-            spreadRadius: 4,
-          )
-        ],
+          boxShadow: [
+            BoxShadow(
+              color: whiteColor,
+              offset: Offset(2, 2),
+              blurRadius: 10,
+              spreadRadius: 4,
+            )
+          ],
           borderRadius: BorderRadius.circular(12),
           color: Color.fromARGB(255, 10, 116, 107)),
       child: Column(
