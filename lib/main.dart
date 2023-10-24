@@ -1,3 +1,4 @@
+import 'package:finance_app/components/bottom_nav.dart';
 import 'package:finance_app/intro_screen1.dart';
 import 'package:finance_app/onboarding_screen.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      home: NavBar()
     );
   }
 }

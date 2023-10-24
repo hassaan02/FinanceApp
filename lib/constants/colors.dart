@@ -11,3 +11,7 @@ Color blackColor = Colors.black;
 Color greyColor = Colors.grey;
 
 Color green2Color = Colors.green;
+
+Color redColor = Colors.red;
+
+Color grey2Color = Color(0xffC5C5C5);

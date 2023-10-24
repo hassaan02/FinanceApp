@@ -1,5 +1,7 @@
+import 'package:finance_app/components/bottom_nav.dart';
 import 'package:finance_app/components/overLap_Container.dart';
 import 'package:finance_app/constants/colors.dart';
+import 'package:finance_app/model/list_Info.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -50,35 +52,35 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           SliverList(delegate: SliverChildBuilderDelegate((context, index) {
             return ListTile(
-              leading: ClipRRect(
-                borderRadius: BorderRadius.circular(5),
-                child: Image.asset(
-                  "lib/Assets/Images/Transfer.png",
-                  height: 40,
-                ),
+              leading: CircleAvatar(
+                //  backgroundImage: AssetImage("lib/Assets/Images/${geter()[index].image!}")
               ),
               title: Text(
-                "transfer",
+                geter()[index].name!,
                 style: TextStyle(
                     color: blackColor,
                     fontSize: 17,
                     fontWeight: FontWeight.w500),
               ),
               subtitle: Text(
-                "today",
+                geter()[index].time!,
                 style: TextStyle(color: greyColor, fontWeight: FontWeight.w500),
               ),
               trailing: Text(
-                "\$ 200",
+                geter()[index].fee!,
                 style: TextStyle(
-                    color: green2Color,
+                    color: geter()[index].buy! ? redColor : green2Color ,
                     fontWeight: FontWeight.w500,
-                    fontSize: 18),
+                    fontSize: 18,
+                    ),
               ),
             );
-          }))
+          },
+          childCount: geter().length,
+          ))
         ],
-      )),
+      ),
+      ),
     );
   }
 
