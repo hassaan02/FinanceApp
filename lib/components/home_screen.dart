@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SliverList(delegate: SliverChildBuilderDelegate((context, index) {
             return ListTile(
               leading: CircleAvatar(
-                //  backgroundImage: AssetImage("lib/Assets/Images/${geter()[index].image!}")
+                  // backgroundImage: AssetImage("images/${geter()[index].image!}")
               ),
               title: Text(
                 geter()[index].name!,

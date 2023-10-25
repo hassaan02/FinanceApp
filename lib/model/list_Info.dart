@@ -6,6 +6,8 @@ class Money {
   String? time;
   String? fee;
   bool? buy;
+
+  get image => null;
 } 
 
 List <Money> geter(){
